@@ -18,6 +18,13 @@ struct ContentView: View {
                 Text("00:09:96")
                     .font(Font.system(size:90, weight: .thin))
                     .foregroundColor(.white)
+                HStack {
+                    CircleButtonView(buttonColour: .gray, label: "Reset", labelColor: .white)
+                    CircleButtonView(buttonColour: .green, label: "Start", labelColor: .white)
+                    
+                    
+                    
+                }
                 
             }
             .padding()
