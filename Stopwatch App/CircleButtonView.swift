@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct CircleButtonView: View {
-    let buttonColour: Color
+    let buttonColour: String
     let label: String
     let labelColor: Color
     var body: some View {
         ZStack {
             Circle()
-                .foregroundColor(buttonColour)
+                .foregroundColor(Color(buttonColour))
                 .frame(width: 100)
             Circle()
                 .foregroundColor(.black)
                 .frame(width: 93)
             Circle()
-                .foregroundColor(buttonColour)
+                .foregroundColor(Color(buttonColour))
                 .frame(width: 89)
             Text(label)
                 .foregroundColor(labelColor)
@@ -33,6 +33,6 @@ struct CircleButtonView: View {
 
 struct CircleButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        CircleButtonView(buttonColour: .gray, label: "Reset", labelColor: .white)
+        CircleButtonView(buttonColour: "Dark_Grey", label: "Reset", labelColor: .white)
     }
 }
