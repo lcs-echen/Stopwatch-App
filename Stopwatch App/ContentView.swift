@@ -14,19 +14,34 @@ struct ContentView: View {
             Color.black
                 .ignoresSafeArea()
             //Second Layer (rest of the interface)
+            
             VStack {
+                
+                Spacer()
+                
                 Text("00:09:96")
                     .font(Font.system(size:90, weight: .thin))
                     .foregroundColor(.white)
+                
                 HStack {
                     CircleButtonView(buttonColour: "Dark Grey", label: "Reset", labelColor: .white)
                     Spacer()
                     CircleButtonView(buttonColour: "Dark Green", label: "Start", labelColor: .green)
-                    
-                    
+                }
+                
+                List {
+                    Group {
+                        Text("1")
+                        Text("2")
+                        Text("3")
+                        Text("1")
+                        Text("1")
+                    }
                     
                 }
                 
+                .frame(height: 300)
+                .listStyle(.plain)
             }
             .padding()
         }
@@ -35,7 +50,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        TabView(selection: Binding.content: 3) {
+        TabView (selection: Binding.constant(3)){
             Text("World Clock")
                 .tabItem {
                     Image(systemName: "globe")
@@ -66,9 +81,9 @@ struct ContentView_Previews: PreviewProvider {
                 }
                 .tag(4)
             
-                .accentColor(.orange)
-                .preferredColorScheme(.dark)
-            
+
         }
+        .accentColor(.orange)
+        .preferredColorScheme(.dark)
     }
 }
