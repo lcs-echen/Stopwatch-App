@@ -31,13 +31,13 @@ struct ContentView: View {
                 
                 List {
                     Group {
-                        Text("1")
-                        Text("2")
-                        Text("3")
-                        Text("1")
-                        Text("1")
+                        ListItemView(lap: "Lap 5", text: "00:00.98", color: .white)
+                        ListItemView(lap: "Lap 4", text: "00:04.08", color: .red)
+                        ListItemView(lap: "Lap 3", text: "00:00.96", color: .green)
+                        ListItemView(lap: "Lap 2", text: "00:02.76", color: .white)
+                        ListItemView(lap: "Lap 1", text: "00:01.16", color: .white)
                     }
-                    
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                 }
                 
                 .frame(height: 300)
@@ -74,14 +74,12 @@ struct ContentView_Previews: PreviewProvider {
                 }
                 .tag(3)
             
-            Text("timer")
+            Text("Timer")
                 .tabItem {
                     Image(systemName: "timer")
                     Text("Timer")
                 }
                 .tag(4)
-            
-
         }
         .accentColor(.orange)
         .preferredColorScheme(.dark)

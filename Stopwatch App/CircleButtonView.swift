@@ -24,7 +24,7 @@ struct CircleButtonView: View {
                 .frame(width: 89)
             Text(label)
                 .foregroundColor(labelColor)
-                .font(.title2)
+                .font(.title3)
             
             
         }

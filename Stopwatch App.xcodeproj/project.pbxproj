@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CAA5C3D32925CABB00DC9D1E /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA5C3D22925CABB00DC9D1E /* ListItemView.swift */; };
 		CADA9AA1291BECF10025FAC7 /* Stopwatch_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA9AA0291BECF10025FAC7 /* Stopwatch_AppApp.swift */; };
 		CADA9AA3291BECF10025FAC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA9AA2291BECF10025FAC7 /* ContentView.swift */; };
 		CADA9AA5291BECF30025FAC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADA9AA4291BECF30025FAC7 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CAA5C3D22925CABB00DC9D1E /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		CADA9A9D291BECF10025FAC7 /* Stopwatch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stopwatch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CADA9AA0291BECF10025FAC7 /* Stopwatch_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch_AppApp.swift; sourceTree = "<group>"; };
 		CADA9AA2291BECF10025FAC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				CADA9AA0291BECF10025FAC7 /* Stopwatch_AppApp.swift */,
 				CADA9AA2291BECF10025FAC7 /* ContentView.swift */,
 				CADA9AAE291BF3DA0025FAC7 /* CircleButtonView.swift */,
+				CAA5C3D22925CABB00DC9D1E /* ListItemView.swift */,
 				CADA9AA4291BECF30025FAC7 /* Assets.xcassets */,
 				CADA9AA6291BECF30025FAC7 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				CADA9AAF291BF3DA0025FAC7 /* CircleButtonView.swift in Sources */,
 				CADA9AA3291BECF10025FAC7 /* ContentView.swift in Sources */,
 				CADA9AA1291BECF10025FAC7 /* Stopwatch_AppApp.swift in Sources */,
+				CAA5C3D32925CABB00DC9D1E /* ListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
